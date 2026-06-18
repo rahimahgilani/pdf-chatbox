@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.main-page{
+    background-color: #01011b;
+    height: 100dvh;
+    display: flex; 
+}
+
+.pdf-icon{
+  height: 55px;
+  width: 45px;
+  justify-items: right;
+}
