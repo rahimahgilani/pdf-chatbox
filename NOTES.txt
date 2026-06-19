@@ -13,3 +13,18 @@ BACKEND
     python -m venv venv 
     venv\Scripts\activate
 3.  -->
+
+
+BRANCHING 
+
+1. git checkout main
+2. git pull origin main          (get the latest)
+3. git checkout -b module-2-pdf-chunking   (branch BEFORE coding)
+4. ...write your code...
+5. git add .
+6. git commit -m "extract and chunk PDF text"
+7. (repeat 4-6 as many times as you want while working)
+8. git push -u origin module-2-pdf-chunking
+9. git checkout main
+10. git merge module-2-pdf-chunking
+11. git push origin main

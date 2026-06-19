@@ -1,7 +1,0 @@
-1. App.jsx --> holds your routes to different pages 
-2. Main.jsx will hold the app div 
-3. add to run backend and frontend concurently
-4. UseNavigate to make buttons interactive and navigate to other component pages. 
-e.g <button className="download-pdf" onClick={()=>navigate("/chat-pdf")}>
-const navigate = useNavigate() --> add before return
-import --> import { useNavigate } from 'react-router-dom';
