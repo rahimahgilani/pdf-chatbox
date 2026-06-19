@@ -17,6 +17,9 @@ const MainPage = () => {
           </button>
         </div>
         <div className="lower-main">
+          <button className="upload-button">
+            Upload
+          </button>
           <div className="placeholder">
             <input
             type="text"
