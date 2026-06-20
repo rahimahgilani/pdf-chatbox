@@ -21,13 +21,19 @@ Link: https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_sim
 4. encode the sentences into embeddings 
 5. pass the embeddings to similarity for comparison 
 
-STEP 2: PDF EXTRACTION + CHUNKING 
+STEP 2: PDF EXTRACTION 
 Link: https://pymupdf.readthedocs.io/en/latest/the-basics.html
-1. if we make an embessing of the entire pdf that may create one vector that blurs every topic together; chunking helps us make more focused embeddings to improve search precision. 
+1. if we make an embedding of the entire pdf that may create one vector that blurs every topic together; chunking helps us make more focused embeddings to improve search precision. 
 2. we using overlapping to ensure that information doesn't get severed/cut off at the chunk boundary (incomplete sentences)
 3. we call RecursiveCharacterTextSplitter  to cut on natural boundaries (paras, sentences then words) to keep things semantically coherent
 
 STEP 3: Chunking using the RecursiveCharacterTextSplitter
+Link: https://docs.langchain.com/oss/python/integrations/splitters/index#text-structure-based
+Link: https://reference.langchain.com/python/langchain-text-splitters/character/RecursiveCharacterTextSplitter
+1. call text splitter - define chunk size and chunk overlap 
+2. error I was facing - pass the txt file the content is written to and apply encoding texts = text_splitter.split_text(open("output.txt", "r", encoding="utf8").read())
+3. keep pdf file in same folder as the chunking file.
+
 
 BRANCHING 
 
