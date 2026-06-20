@@ -26,6 +26,6 @@ print("Iterated through the document and extracted text successfully.")
 
 # Step 4: Call LangChain RecursiveCharacterTextSplitter to split the text into chunks
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-texts = text_splitter.split_text(open("output.txt", "r", encoding="utf8").read())
-print(f"Number of chunks: {len(texts)}")
-# print(texts[0]) # print the first chunk
+chunks = text_splitter.split_text(open("output.txt", "r", encoding="utf8").read())
+print(f"Number of chunks: {len(chunks)}")
+# print(chunks[0]) # print the first chunk
