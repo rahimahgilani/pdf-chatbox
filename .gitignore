@@ -24,3 +24,13 @@ dist-ssr
 *.sw?
 
 NOTES
+.env
+
+venv/
+.env
+data/uploads/
+data/chroma_db/
+__pycache__/
+*.pdf
+NOTES.txt
+output.txt

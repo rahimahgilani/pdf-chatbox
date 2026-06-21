@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@langchain/core": "^1.2.0",
+    "@langchain/textsplitters": "^1.0.1",
     "express": "^5.2.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"

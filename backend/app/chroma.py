@@ -2,7 +2,7 @@ import chromadb
 from pdf_chunking import chunks
 
 # Step 1: Setting up the chroma client
-chroma_client = chromadb.Client()
+chroma_client = chromadb.PersistentClient(path="../data/chroma_db")
 
 # Step 2: Creating or getting the same collection
 collection = chroma_client.get_or_create_collection(name="pdf-embeddings")
